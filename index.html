@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" ">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 shadow px-20 py-4">
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case font-bold text-4xl">Library</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered" id="search-box" />
+                    </div>
+                    <button id="search-btn" class="btn btn-outline btn-primary" type="submit"
+                        onclick="searchResult()">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="m-10">
+            <h1 id="search-book-heading" class="text-5xl pl-10 font-bold">Search Your Book</h1>
+            <h1 id="search-book-heading2" class="text-5xl pl-10 font-bold">The book we found</h1>
+            <h1 id="loading" class="text-5xl pl-10 font-bold">Loading....</h1>
+            <h1 id="not-found" class="text-5xl pl-10 font-bold">NOT FOUND</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-5" id="book-container">
+
+            </div>
+        </section>
+        <section>
+         
+            <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box">
+                    <div id="author-detail">
+                        
+                    </div>
+                    <div class="modal-action">
+                        <label for="my-modal" class="btn">Okay</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
