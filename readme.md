@@ -3,13 +3,11 @@
 ## A simple Library page
 
 ### Objective
-Explore openlibrary.org API
-    -search books via Title
-        Display them 
-    -retrieve information about an author
-        Display it in ui.
-    -Optional
-        -handle wrong search. show error message
+* **Explore openlibrary.org API**
+    * search books via Title and Display them 
+    * retrieve information about an author<br/>-Display it in ui by modal
+    * Optional<br/>
+        -handle wrong search.<br/> -show error message<br/>
         -display spinner
 
 
